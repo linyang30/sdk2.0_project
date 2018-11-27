@@ -1,0 +1,42 @@
+2018-11-27 11:45:59,815 myunit.py[line:16] INFO setUp
+2018-11-27 12:36:24,474 myunit.py[line:16] INFO setUp
+2018-11-27 12:36:30,430 myunit.py[line:21] INFO tearDown
+2018-11-27 13:44:57,569 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:44:57,600 myunit.py[line:17] INFO setUp
+2018-11-27 13:44:57,601 common_func.py[line:14] INFO connect device
+2018-11-27 13:44:57,601 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:45:14,898 myunit.py[line:23] INFO tearDown
+2018-11-27 13:45:57,703 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:45:57,715 myunit.py[line:17] INFO setUp
+2018-11-27 13:45:57,715 common_func.py[line:14] INFO connect device
+2018-11-27 13:45:57,715 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:46:18,001 myunit.py[line:23] INFO tearDown
+2018-11-27 13:47:20,751 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:47:20,763 myunit.py[line:17] INFO setUp
+2018-11-27 13:47:20,763 common_func.py[line:14] INFO connect device
+2018-11-27 13:47:20,764 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:48:02,289 myunit.py[line:23] INFO tearDown
+2018-11-27 13:49:09,746 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:49:09,757 myunit.py[line:17] INFO setUp
+2018-11-27 13:49:09,757 common_func.py[line:14] INFO connect device
+2018-11-27 13:49:09,757 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:50:10,082 myunit.py[line:23] INFO tearDown
+2018-11-27 13:51:23,747 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:51:23,759 myunit.py[line:17] INFO setUp
+2018-11-27 13:51:23,760 common_func.py[line:14] INFO connect device
+2018-11-27 13:51:23,760 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:52:16,091 myunit.py[line:23] INFO tearDown
+2018-11-27 13:53:26,069 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:53:26,079 myunit.py[line:17] INFO setUp
+2018-11-27 13:53:26,079 common_func.py[line:14] INFO connect device
+2018-11-27 13:53:26,079 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:54:19,034 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:54:19,050 myunit.py[line:17] INFO setUp
+2018-11-27 13:54:19,050 common_func.py[line:14] INFO connect device
+2018-11-27 13:54:19,051 common_func.py[line:8] INFO get_connect_data
+2018-11-27 13:55:19,719 common_func.py[line:25] INFO get_cpu_info
+2018-11-27 13:55:19,990 common_func.py[line:28] INFO cpu:98%
+2018-11-27 13:55:19,990 common_func.py[line:32] INFO get_memory_info
+2018-11-27 13:55:31,896 common_func.py[line:40] INFO memory:31%
+2018-11-27 13:55:31,897 myunit.py[line:23] INFO tearDown
+2018-11-27 15:05:29,516 common_func.py[line:8] INFO get_connect_data
