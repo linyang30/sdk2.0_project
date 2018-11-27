@@ -46,4 +46,4 @@ def get_screen_shot(name):
     snapshot(filename=image_name)
 
 if __name__ == '__main__':
-    get_memory_info()
+    print(get_cpu_info())

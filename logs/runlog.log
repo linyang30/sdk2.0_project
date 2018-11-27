@@ -61,3 +61,17 @@
 2018-11-27 15:34:05,358 common_func.py[line:32] INFO get_memory_info
 2018-11-27 15:34:24,845 common_func.py[line:40] INFO memory:32%
 2018-11-27 15:34:24,845 myunit.py[line:23] INFO tearDown
+2018-11-27 16:23:38,395 common_func.py[line:8] INFO get_connect_data
+2018-11-27 16:23:38,413 common_func.py[line:8] INFO get_connect_data
+2018-11-27 16:23:38,417 common_func.py[line:20] INFO get_time
+2018-11-27 16:23:38,419 run.py[line:26] INFO start run test case...
+2018-11-27 16:23:38,421 myunit.py[line:17] INFO setUp
+2018-11-27 16:23:38,421 common_func.py[line:14] INFO connect device
+2018-11-27 16:23:38,421 common_func.py[line:8] INFO get_connect_data
+2018-11-27 16:23:38,826 adb.py[line:239] INFO connected to 10.10.6.129:30016
+
+2018-11-27 16:25:20,997 common_func.py[line:25] INFO get_cpu_info
+2018-11-27 16:25:21,368 common_func.py[line:28] INFO cpu:97%
+2018-11-27 16:25:21,369 common_func.py[line:32] INFO get_memory_info
+2018-11-27 16:25:30,612 common_func.py[line:40] INFO memory:30%
+2018-11-27 16:25:30,612 myunit.py[line:23] INFO tearDown
