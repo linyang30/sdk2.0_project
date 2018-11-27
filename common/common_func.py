@@ -42,8 +42,20 @@ def get_memory_info():
 
 def get_screen_shot(name):
     logging.info('get_screen_shot')
-    image_name = '../screenshots/' + get_time() + 'name' + '.png'
+    image_name = '../screenshots/' + get_time() + name + '.png'
     snapshot(filename=image_name)
+
+def record(test_time, test_name):
+    sleep(180)
+    logging.info('=' * 20 + 'start_' + test_name + '=' * 20)
+    get_cpu_info()
+    get_memory_info()
+    get_screen_shot('start_' + test_name)
+    sleep(test_time)
+    logging.info('=' * 20 + 'finish_' + test_name + '=' * 20)
+    get_cpu_info()
+    get_memory_info()
+    get_screen_shot('finish_' + test_name)
 
 if __name__ == '__main__':
     print(get_cpu_info())

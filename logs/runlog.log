@@ -75,3 +75,47 @@
 2018-11-27 16:25:21,369 common_func.py[line:32] INFO get_memory_info
 2018-11-27 16:25:30,612 common_func.py[line:40] INFO memory:30%
 2018-11-27 16:25:30,612 myunit.py[line:23] INFO tearDown
+2018-11-27 16:40:53,427 common_func.py[line:8] INFO get_connect_data
+2018-11-27 16:40:53,429 common_func.py[line:8] INFO get_connect_data
+2018-11-27 16:40:53,433 common_func.py[line:20] INFO get_time
+2018-11-27 16:40:53,433 run.py[line:21] INFO start run test case...
+2018-11-27 16:40:53,434 myunit.py[line:17] INFO setUp
+2018-11-27 16:40:53,434 common_func.py[line:14] INFO connect device
+2018-11-27 16:40:53,435 common_func.py[line:8] INFO get_connect_data
+2018-11-27 16:44:34,806 common_func.py[line:25] INFO get_cpu_info
+2018-11-27 16:44:35,411 common_func.py[line:28] INFO cpu:97%
+2018-11-27 16:44:35,413 common_func.py[line:32] INFO get_memory_info
+2018-11-27 16:44:44,439 common_func.py[line:40] INFO memory:31%
+2018-11-27 16:44:44,439 common_func.py[line:44] INFO get_screen_shot
+2018-11-27 16:44:44,441 common_func.py[line:20] INFO get_time
+2018-11-27 16:44:44,920 myunit.py[line:23] INFO tearDown
+2018-11-27 17:10:07,208 common_func.py[line:8] INFO get_connect_data
+2018-11-27 17:10:07,213 common_func.py[line:8] INFO get_connect_data
+2018-11-27 17:10:07,219 common_func.py[line:20] INFO get_time
+2018-11-27 17:10:07,221 run.py[line:21] INFO start run test case...
+2018-11-27 17:10:07,222 myunit.py[line:17] INFO setUp
+2018-11-27 17:10:07,223 common_func.py[line:14] INFO connect device
+2018-11-27 17:10:07,223 common_func.py[line:8] INFO get_connect_data
+2018-11-27 17:10:49,103 myunit.py[line:23] INFO tearDown
+2018-11-27 17:12:44,238 common_func.py[line:8] INFO get_connect_data
+2018-11-27 17:12:44,260 common_func.py[line:8] INFO get_connect_data
+2018-11-27 17:12:44,271 common_func.py[line:20] INFO get_time
+2018-11-27 17:12:44,276 run.py[line:21] INFO start run test case...
+2018-11-27 17:12:44,278 myunit.py[line:17] INFO setUp
+2018-11-27 17:12:44,279 common_func.py[line:14] INFO connect device
+2018-11-27 17:12:44,279 common_func.py[line:8] INFO get_connect_data
+2018-11-27 17:16:28,468 common_func.py[line:50] INFO ==================================================start_full_profile_min_memory==================================================
+2018-11-27 17:16:28,469 common_func.py[line:25] INFO get_cpu_info
+2018-11-27 17:16:28,973 common_func.py[line:28] INFO cpu:99%
+2018-11-27 17:16:28,974 common_func.py[line:32] INFO get_memory_info
+2018-11-27 17:16:39,826 common_func.py[line:40] INFO memory:29%
+2018-11-27 17:16:39,826 common_func.py[line:44] INFO get_screen_shot
+2018-11-27 17:16:39,829 common_func.py[line:20] INFO get_time
+2018-11-27 17:19:40,278 common_func.py[line:55] INFO ==================================================finish_full_profile_min_memory==================================================
+2018-11-27 17:19:40,278 common_func.py[line:25] INFO get_cpu_info
+2018-11-27 17:19:40,560 common_func.py[line:28] INFO cpu:99%
+2018-11-27 17:19:40,560 common_func.py[line:32] INFO get_memory_info
+2018-11-27 17:19:52,310 common_func.py[line:40] INFO memory:28%
+2018-11-27 17:19:52,310 common_func.py[line:44] INFO get_screen_shot
+2018-11-27 17:19:52,328 common_func.py[line:20] INFO get_time
+2018-11-27 17:19:52,842 myunit.py[line:23] INFO tearDown
