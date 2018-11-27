@@ -16,3 +16,4 @@ with open(report_name,'wb') as f:
     runner=BSTestRunner(stream=f,title='sdk2.0 Test Report',description='sdk2.0 automatic test report')
     logging.info('start run test case...')
     runner.run(discover)
+
