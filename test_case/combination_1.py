@@ -13,26 +13,28 @@ class Combination1(StartEnd):
     test_time = 60 * 30
 
     def test_full_profile_min_memory(self):
+        logging.info('test_full_profile_min_memory')
         touch(Template(filename='../action_image/full_profile.png', threshold=self.threshold, resolution=self.resolution))
         touch(Template(filename='../action_image/min_memory.png', threshold=self.threshold, resolution=self.resolution))
         record(self.test_time, 'full_profile_min_memory')
 
     def test_full_profile_best_accuracy(self):
+        logging.info('test_full_profile_best_accuracy')
         touch(Template(filename='../action_image/full_profile.png', threshold=self.threshold, resolution=self.resolution))
-        touch(Template(filename='../action_image/best_accuracy.png', threshold=self.threshold, resolution=self.resolution))
+        # touch(Template(filename='../action_image/best_accuracy.png', threshold=self.threshold, resolution=self.resolution))
         record(self.test_time, 'full_profile_best_accuracy')
 
     def test_basic_profile_min_memory(self):
+        logging.info('test_basic_profile_min_memory')
         touch(Template(filename='../action_image/basic_profile.png', threshold=self.threshold, resolution=self.resolution))
         touch(Template(filename='../action_image/min_memory.png', threshold=self.threshold, resolution=self.resolution))
         record(self.test_time, 'basic_profile_min_memory')
 
     def test_basic_profile_best_accuracy(self):
+        logging.info('test_basic_profile_best_accuracy')
         touch(Template(filename='../action_image/basic_profile.png', threshold=self.threshold, resolution=self.resolution))
-        touch(Template(filename='../action_image/best_accuracy.png', threshold=self.threshold, resolution=self.resolution))
+        # touch(Template(filename='../action_image/best_accuracy.png', threshold=self.threshold, resolution=self.resolution))
         record(self.test_time, 'basic_profile_best_accuracy')
-
-
 
 
 

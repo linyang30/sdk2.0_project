@@ -24,7 +24,7 @@ def get_time():
 def get_cpu_info():
     logging.info('get_cpu_info')
     out = os.popen('adb shell dumpsys cpuinfo | findstr "TOTAL"').read()
-    result = out.split()[0]
+    result = out.split()[2]
     logging.info('cpu:'+ result)
     return result
 

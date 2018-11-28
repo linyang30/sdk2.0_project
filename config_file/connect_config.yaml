@@ -1,6 +1,6 @@
 ip: 127.0.0.1
 port: 5037
-device_name: 10.10.6.129:30016
+device_name: 10.10.6.154:30016
 connect_func: ADBORI
 app_package: com.orbbec.AstraUnity536Sample
 screen_width: 1280
