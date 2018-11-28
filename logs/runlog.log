@@ -78,3 +78,17 @@
 2018-11-27 20:52:25,432 common_func.py[line:44] INFO get_screen_shot
 2018-11-27 20:52:25,442 common_func.py[line:20] INFO get_time
 2018-11-27 20:52:26,202 myunit.py[line:23] INFO tearDown
+2018-11-28 09:35:48,173 common_func.py[line:8] INFO get_connect_data
+2018-11-28 09:35:48,175 common_func.py[line:8] INFO get_connect_data
+2018-11-28 09:35:48,191 myunit.py[line:17] INFO setUp
+2018-11-28 09:35:48,191 common_func.py[line:14] INFO connect device
+2018-11-28 09:35:48,191 common_func.py[line:8] INFO get_connect_data
+2018-11-28 09:36:19,712 combination_1.py[line:40] INFO test only
+2018-11-28 09:36:19,712 myunit.py[line:23] INFO tearDown
+2018-11-28 09:36:59,293 common_func.py[line:8] INFO get_connect_data
+2018-11-28 09:36:59,296 common_func.py[line:8] INFO get_connect_data
+2018-11-28 09:36:59,310 myunit.py[line:17] INFO setUp
+2018-11-28 09:36:59,311 common_func.py[line:14] INFO connect device
+2018-11-28 09:36:59,311 common_func.py[line:8] INFO get_connect_data
+2018-11-28 09:37:32,894 combination_1.py[line:40] INFO test only
+2018-11-28 09:37:32,894 myunit.py[line:23] INFO tearDown

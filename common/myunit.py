@@ -22,4 +22,5 @@ class StartEnd(unittest.TestCase):
     def tearDown(self):
         logging.info('tearDown')
         sleep(5)
-        stop_app(self.data['app_package'])
+        keyevent("BACK")
+        # stop_app(self.data['app_package'])
