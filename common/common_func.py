@@ -3,6 +3,7 @@ from airtest.core.api import *
 import time
 import os
 import logging
+import psutil
 
 def get_connect_data():
     logging.info('get_connect_data')
@@ -56,6 +57,32 @@ def record(test_time, test_name):
     get_cpu_info()
     get_memory_info()
     get_screen_shot('finish_' + test_name)
+
+def getCPUstate(interval=1):
+    logging.info('getCPUstate： ')
+    logging.info(" CPU: " + str(psutil.cpu_percent(interval)) + "%")
+    return (" CPU: " + str(psutil.cpu_percent(interval)) + "%")
+    # function of Get Memory
+
+def getMemorystate():
+    logging.info('getMemorystate')
+    phymem = psutil.virtual_memory()
+    line = "Memory: %5s%% %6s/%s" % (
+        phymem.percent,
+        str(int(phymem.used / 1024 / 1024)) + "M",
+        str(int(phymem.total / 1024 / 1024)) + "M"
+    )
+    logging.info(line)
+    return line
+
+def record_win(test_time, test_name):
+    logging.info('=' * 20 + 'start_' + test_name + '=' * 20)
+    getCPUstate()
+    getMemorystate()
+    sleep(test_time)
+    logging.info('=' * 20 + 'finish_' + test_name + '=' * 20)
+    getCPUstate()
+    getMemorystate()
 
 if __name__ == '__main__':
     print(get_cpu_info())
