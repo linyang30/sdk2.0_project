@@ -22,15 +22,15 @@ def get_time():
     now = time.strftime('%Y-%m-%d %H_%M_%S')
     return now
 
-def get_cpu_info():
-    logging.info('get_cpu_info')
+def get_phone_cpu_info():
+    logging.info('get_phone_cpu_info')
     out = os.popen('adb shell dumpsys cpuinfo | findstr "TOTAL"').read()
     result = out.split()[2]
     logging.info('cpu:'+ result)
     return result
 
-def get_memory_info():
-    logging.info('get_memory_info')
+def get_phone_memory_info():
+    logging.info('get_phone_memory_info')
     out_total = os.popen('adb shell dumpsys meminfo | findstr /c:"Total RAM"').read()
     out_used = os.popen('adb shell dumpsys meminfo | findstr /c:"Used RAM"').read()
 
@@ -41,31 +41,31 @@ def get_memory_info():
     logging.info('memory:' + str(result) + '%')
     return str(result) + '%'
 
-def get_screen_shot(name):
-    logging.info('get_screen_shot')
+def get_phone_screen_shot(name):
+    logging.info('get_phone_screen_shot')
     image_name = '../screenshots/' + get_time() + name + '.png'
     snapshot(filename=image_name)
 
-def record(test_time, test_name):
+def record_phone(test_time, test_name):
     sleep(180)
     logging.info('=' * 20 + 'start_' + test_name + '=' * 20)
-    get_cpu_info()
-    get_memory_info()
-    get_screen_shot('start_' + test_name)
+    get_phone_cpu_info()
+    get_phone_memory_info()
+    get_phone_screen_shot('start_' + test_name)
     sleep(test_time)
     logging.info('=' * 20 + 'finish_' + test_name + '=' * 20)
-    get_cpu_info()
-    get_memory_info()
-    get_screen_shot('finish_' + test_name)
+    get_phone_cpu_info()
+    get_phone_memory_info()
+    get_phone_screen_shot('finish_' + test_name)
 
-def getCPUstate(interval=1):
-    logging.info('getCPUstate： ')
+def get_computer_cpu_info(interval=1):
+    logging.info('get_computer_cpu_info： ')
     logging.info(" CPU: " + str(psutil.cpu_percent(interval)) + "%")
     return (" CPU: " + str(psutil.cpu_percent(interval)) + "%")
     # function of Get Memory
 
-def getMemorystate():
-    logging.info('getMemorystate')
+def get_computer_memory_info():
+    logging.info('get_computer_memory_info')
     phymem = psutil.virtual_memory()
     line = "Memory: %5s%% %6s/%s" % (
         phymem.percent,
@@ -75,14 +75,18 @@ def getMemorystate():
     logging.info(line)
     return line
 
-def record_win(test_time, test_name):
+def record_computer(test_time, test_name):
+    sleep(5)
     logging.info('=' * 20 + 'start_' + test_name + '=' * 20)
-    getCPUstate()
-    getMemorystate()
+    get_computer_cpu_info()
+    get_computer_memory_info()
     sleep(test_time)
     logging.info('=' * 20 + 'finish_' + test_name + '=' * 20)
-    getCPUstate()
-    getMemorystate()
+    get_computer_cpu_info()
+    get_computer_memory_info()
+
+def kill_process(pid):
+    os.system('TASKKILL /PID %s /T /F' % pid)
 
 if __name__ == '__main__':
-    print(get_cpu_info())
+    print(get_phone_cpu_info())

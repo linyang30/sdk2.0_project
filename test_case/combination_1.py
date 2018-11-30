@@ -1,6 +1,6 @@
 from common.myunit import StartEnd
 import unittest
-from common.common_func import get_cpu_info, get_memory_info, get_connect_data, get_screen_shot, record
+from common.common_func import get_phone_cpu_info, get_phone_memory_info, get_connect_data, get_phone_screen_shot, record_phone
 from airtest.core.api import *
 from time import sleep
 import logging
@@ -16,25 +16,25 @@ class Combination1(StartEnd):
         logging.info('test_full_profile_min_memory')
         touch(Template(filename='../action_image/full_profile.png', threshold=self.threshold, resolution=self.resolution))
         touch(Template(filename='../action_image/min_memory.png', threshold=self.threshold, resolution=self.resolution))
-        record(self.test_time, 'full_profile_min_memory')
+        record_phone(self.test_time, 'full_profile_min_memory')
 
     def test_full_profile_best_accuracy(self):
         logging.info('test_full_profile_best_accuracy')
         touch(Template(filename='../action_image/full_profile.png', threshold=self.threshold, resolution=self.resolution))
         # touch(Template(filename='../action_image/best_accuracy.png', threshold=self.threshold, resolution=self.resolution))
-        record(self.test_time, 'full_profile_best_accuracy')
+        record_phone(self.test_time, 'full_profile_best_accuracy')
 
     def test_basic_profile_min_memory(self):
         logging.info('test_basic_profile_min_memory')
         touch(Template(filename='../action_image/basic_profile.png', threshold=self.threshold, resolution=self.resolution))
         touch(Template(filename='../action_image/min_memory.png', threshold=self.threshold, resolution=self.resolution))
-        record(self.test_time, 'basic_profile_min_memory')
+        record_phone(self.test_time, 'basic_profile_min_memory')
 
     def test_basic_profile_best_accuracy(self):
         logging.info('test_basic_profile_best_accuracy')
         touch(Template(filename='../action_image/basic_profile.png', threshold=self.threshold, resolution=self.resolution))
         # touch(Template(filename='../action_image/best_accuracy.png', threshold=self.threshold, resolution=self.resolution))
-        record(self.test_time, 'basic_profile_best_accuracy')
+        record_phone(self.test_time, 'basic_profile_best_accuracy')
 
 
 
