@@ -2,7 +2,7 @@ import unittest
 import subprocess
 from time import sleep
 import logging
-from common.common_func import record_computer, kill_process
+from common.common_func import record_computer, kill_process_win
 import logging.config
 from common.myunit_win import StartEnd_win
 import os
@@ -32,7 +32,7 @@ class WinTest(StartEnd_win):
                 command = self.data['base_dir'] + i
                 p1 = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
                 record_computer(self.test_time, i)
-                kill_process(p1.pid)
+                kill_process_win(p1.pid)
                 out = str(p1.stdout.read())
                 logging.info(out)
 

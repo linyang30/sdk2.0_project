@@ -85,7 +85,7 @@ def record_computer(test_time, test_name):
     get_computer_cpu_info()
     get_computer_memory_info()
 
-def kill_process(pid):
+def kill_process_win(pid):
     os.system('TASKKILL /PID %s /T /F' % pid)
 
 if __name__ == '__main__':

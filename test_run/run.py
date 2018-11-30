@@ -10,7 +10,7 @@ import logging
 test_dir='../test_case'
 report_dir='../test_reports'
 
-discover=unittest.defaultTestLoader.discover(test_dir, pattern='combination_1.py')
+discover=unittest.defaultTestLoader.discover(test_dir, pattern='test_computer_win.py')
 
 report_name=report_dir + '/' + get_time() + ' test_report.html'
 
